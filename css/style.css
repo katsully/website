@@ -3,12 +3,49 @@ body {
 }
 
 h1,h2 {
-	text-align: center;
-	color: #ecf0f1
+	color: #ecf0f1;
+	padding-left: 50px;
 }
 
 h1 {
-	padding-top: 450px;
+	padding-top: 50px;
 	margin-bottom: 0px;
 	font-size: 75px;
 }
+
+h2 {
+	width: 50%
+}
+
+footer {
+	position: fixed;
+	bottom: 10%;
+	left: 40%;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #ecf0f1;
+}
+
+.fa-twitter:hover {
+    background: #55ACEE;
+}
+
+.fa-linkedin:hover {
+	background: #007bb5;
+}
+
+.fa-instagram:hover {
+	background: #8a3ab9;
+}
+
+.fa-github:hover {
+	background: #000000;
+}
+

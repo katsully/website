@@ -1,13 +1,16 @@
 <head>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
 	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 	<script> 
 		$(function(){
-  			$("#menu").load("menu.html"); 
+  			$("#menu").load("templates/menu.html"); 
 		});
 	</script> 
 </head>
+<div class="ng-view">
 <body background="images/aether02bwdark.jpg">
 	<!-- <nav class="topnav" id="myTopnav">
   		<a href="#home">Hosdfme</a>
@@ -20,6 +23,7 @@
 	<h1>Kat Sullivan</h1>
 	<h2>creative coder, digital performance artist, dancing cyborg, inventor of job titles</h2>
 </body>
+<div class="ng-view"></div>
 
 <footer>
 		<a target="_blank" href="https://www.instagram.com/katmsully" class="fa fa-instagram"></a>

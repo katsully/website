@@ -4,26 +4,26 @@
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
 	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-	<script> 
-		$(function(){
-  			$("#menu").load("templates/menu.html"); 
-		});
-	</script> 
+	<script type="text/javascript" src="js/main.js"></script>
+	// <script> 
+	// 	$(function(){
+ //  			$("#menu").load("templates/menu.html"); 
+	// 	});
+	// </script> 
 </head>
-<div class="ng-view">
-<body background="images/aether02bwdark.jpg">
-	<!-- <nav class="topnav" id="myTopnav">
-  		<a href="#home">Hosdfme</a>
-  		<a href="#news">sfsdfsdsfdsfds</a>
-  		<a href="#contact">ewrwerwerw</a>
-  		<a id="video" href="video.html">Video Reel</a>
-	</nav> -->
-	<div id="menu"></div>
+<body ng-app="myApp" background="images/aether02bwdark.jpg">
+	<nav class="topnav" id="myTopnav">
+  		<a href="#/portfolio">Portfolio</a>
+  		<a href="#/events">Upcoming Events</a>
+  		<a href="#/cv">CV</a>
+  		<a href="#/video">Video Reel</a>
+    </nav>
 
 	<h1>Kat Sullivan</h1>
 	<h2>creative coder, digital performance artist, dancing cyborg, inventor of job titles</h2>
+	<div class="ng-view"></div>
 </body>
-<div class="ng-view"></div>
+
 
 <footer>
 		<a target="_blank" href="https://www.instagram.com/katmsully" class="fa fa-instagram"></a>

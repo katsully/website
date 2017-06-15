@@ -6,21 +6,14 @@
 	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	// <script> 
-	// 	$(function(){
- //  			$("#menu").load("templates/menu.html"); 
-	// 	});
-	// </script> 
+		$(function(){
+ 			$("#menu").load("templates/menu.html"); 
+		});
+	</script> 
+	<base href="/">
 </head>
 <body ng-app="myApp" background="images/aether02bwdark.jpg">
-	<nav class="topnav" id="myTopnav">
-  		<a href="#/portfolio">Portfolio</a>
-  		<a href="#/events">Upcoming Events</a>
-  		<a href="#/cv">CV</a>
-  		<a href="#/video">Video Reel</a>
-    </nav>
-
-	<h1>Kat Sullivan</h1>
-	<h2>creative coder, digital performance artist, dancing cyborg, inventor of job titles</h2>
+	<div id="menu"></div>
 	<div class="ng-view"></div>
 </body>
 

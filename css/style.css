@@ -51,9 +51,10 @@ h2 {
 }
 
 footer {
-	position: fixed;
-	bottom: 10%;
-	left: 40%;
+    position: relative;
+	bottom: 0px;
+    padding-top: 40px;
+    padding-left: 35%;
 }
 
 /* Style all font awesome icons */

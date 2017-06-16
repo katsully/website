@@ -11,8 +11,11 @@
 <body>
 <div id="menu"></div>
 <div class="videoWrapper">
-    <video autoplay>
+    <video autoplay controls>
         <source src="../images/teaser.mp4" type="video/mp4">
     </video>
+    <script>
+    	document.getElementsByTagName('video')[0].addEventListener('error', function(event) { console.log(error); }, true);
+    </script>
 </div>
 </body>

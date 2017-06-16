@@ -1,6 +1,7 @@
 body {
 	background-size: 100% 100%;
 	font-family: proxima-nova, sans-serif;
+    padding-bottom:60px; 
 }
 
 /* Add a black background color to the top navigation */
@@ -50,11 +51,12 @@ h2 {
 	font-weight: lighter;
 }
 
-footer {
-    position: relative;
-	bottom: 0px;
-    padding-top: 40px;
-    padding-left: 35%;
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   left: 35%;
 }
 
 /* Style all font awesome icons */

@@ -2,10 +2,19 @@ body {
 	background-color: black;
 }
 
+video {
+	display: block;
+	left: 50%;
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%, -32%);
+    padding 80px;
+    border: 5px solid white;
+}
+
 .videoWrapper > video {
   width: 75%;
   height: 75%;
-  margin-top: 10%;
   object-fit: cover;
 }
 

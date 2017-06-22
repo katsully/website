@@ -9,6 +9,7 @@ app.config(function($routeProvider, $locationProvider) {
         })
         .when('/portfolio', {
             templateUrl: 'templates/portfolio.html',
+            controller : "PortfolioController"
         })
         .when('/events', {
             templateUrl: 'templates/events.html',
@@ -23,4 +24,16 @@ app.config(function($routeProvider, $locationProvider) {
             templateUrl: 'templates/home.html',
         });
     $locationProvider.html5Mode(true);
+});
+
+app.controller("PortfolioController", function ($scope) {
+    $scope.projectName = "Aether";
+    $scope.projectDescription = "I made it";
+    // maybe?
+    // for(var i = 0; i < images.length; i++) {
+    // var img = document.createElement("img");
+    // img.setAttribute('src', images[i]);
+    // img.setAttribute('alt', '');
+    // document.body.appendChild(img);
+    // }
 });

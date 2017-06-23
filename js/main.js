@@ -9,7 +9,9 @@ app.config(function($routeProvider, $locationProvider) {
         })
         .when('/portfolio', {
             templateUrl: 'templates/portfolio.html',
-            controller : "PortfolioController"
+            controller : "PortfolioController",
+            document.body.style.backgroundColor = red;
+            document.body.style.background = "";
         })
         .when('/events', {
             templateUrl: 'templates/events.html',
@@ -29,7 +31,7 @@ app.config(function($routeProvider, $locationProvider) {
 app.controller("PortfolioController", function ($scope) {
     $scope.projectName = "Aether";
     $scope.projectDescription = "I made it";
-    // maybe?
+    // maybe for images?
     // for(var i = 0; i < images.length; i++) {
     // var img = document.createElement("img");
     // img.setAttribute('src', images[i]);

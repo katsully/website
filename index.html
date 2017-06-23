@@ -5,17 +5,29 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
 	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-	<h1>Kat Sullivan</h1>
-	<h2>Artist, Engineer, Teacher</h2>
-	<script> 
-		$(function(){
- 			$("#menu").load("templates/menu.html"); 
-		});
-	</script> 
+	<h1 class="name">Kat Sullivan</h1>
+	<h3 class="description">Digital Performance Artist, Creative Technologist, Dancing Cyborg, Inventor of Job Titles</h3>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".description").css({'width':($('.name').width()+'px')});
+		})
+	</script>
+	<!--// <script> 
+	// 	$(function(){
+ // 			$("#menu").load("templates/menu.html"); 
+	// 	});
+	// </script> -->
 	<base href="/">
 </head>
 <body ng-app="myApp" background="images/aether02bwdark.jpg">
-	<div id="menu"></div>
+	<!-- <div id="menu"></div> -->
+	<nav class="topnav" id="myTopnav">
+  	<a href="/home">Home</a>
+    <a href="/portfolio">Portfolio</a>
+    <a href="/events">Upcoming Events</a>
+    <a href="/cv">CV</a>
+    <a href="/video">Video Reel</a>
+  </nav>
 	<div class="ng-view"></div>
 </body>
 

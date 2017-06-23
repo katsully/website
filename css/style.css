@@ -35,7 +35,7 @@ body {
     color: white;
 }
 
-h1,h2 {
+h1,h3 {
 	color: #ecf0f1;
 	padding-left: 50px;
 }
@@ -46,8 +46,9 @@ h1 {
 	font-size: 75px;
 }
 
-h2 {
+h3 {
 	width: 50%;
+    margin-top: 0px;
 	font-weight: lighter;
 }
 

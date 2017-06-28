@@ -1,23 +1,24 @@
-body {
-	background-color: black;
-}
-
-video {
-	display: block;
-	left: 50%;
-    position: absolute;
-    top: 40%;
-    transform: translate(-50%, -32%);
-    padding 80px;
-    border: 5px solid white;
-}
-
-.videoWrapper > video {
-  width: 75%;
-  height: 75%;
+.videoWrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
   object-fit: cover;
 }
+.videoWrapper video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%; 
+  min-height: 100%; 
 
-.videoWrapper {
-	text-align: center;
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: 100%;
+  height: 100%;
+
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }

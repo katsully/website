@@ -1,2 +1,7 @@
-<h2>{{projectName}}</h2>
-<h3>{{projectDescription}}</h3>
+<div class="portfolio-list-wrap" ng-controller="PortfolioController">
+<div class="portfolio-thumb" ng-repeat="work in works.project">
+    <img src="images/{{work.string}}.jpg" alt="{{work.name}}"/>
+    <h4>{{work.name}}</h4>
+    <i>{{work.date}}</i>
+</div>
+</div>

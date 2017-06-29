@@ -32,23 +32,23 @@ var Works = {}
 
 Works.project =[
     {
-        name : "project1",
-        string : "projectstring1",
+        name : "Aether",
+        string : "aether03",
         date: "17 August 2012"
     },
     {
-        name : "project2",
-        string : "projectstring2",
+        name : "Torn",
+        string : "torn",
         date: "12 December 2013"
     },
     {
-        name : "project3",
-        string : "projectstring3",
+        name : "Parsing Our Silent Language",
+        string : "parsingLang",
         date: "17 September 2012"
     },
     {
-        name : "project3",
-        string : "projectstring4",
+        name : "Liable To Change",
+        string : "ltc",
         date: "17 August 2012"
     },
 ];  

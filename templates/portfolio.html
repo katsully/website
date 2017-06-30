@@ -2,10 +2,7 @@
 
 <div class="portfolio-list-wrap" ng-controller="PortfolioController">
 <div class="portfolio-thumb" ng-repeat="work in works.project">
-    <object data="images/{{work.string}}.jpg" type="image/png">
-    	<img src="images/{{work.string}}.png" />
-  	</object>
+    <object data="images/{{work.string}}.jpg" type="image/jpg"></object>
     <h4>{{work.name}}</h4>
-    <i>{{work.date}}</i>
 </div>
 </div>

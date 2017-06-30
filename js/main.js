@@ -20,6 +20,9 @@ app.config(function($routeProvider, $locationProvider) {
         .when('/video', {
             templateUrl: 'templates/video.html',
         })
+        .when('/404', {
+            templateUrl: 'templates/home.html',
+        })
         .otherwise({
             templateUrl: 'templates/home.html',
         });
@@ -34,22 +37,18 @@ Works.project =[
     {
         name : "Aether",
         string : "aether03",
-        date: "17 August 2012"
     },
     {
         name : "Torn",
         string : "torn",
-        date: "12 December 2013"
     },
     {
         name : "Parsing Our Silent Language",
         string : "parsingLang",
-        date: "17 September 2012"
     },
     {
         name : "Liable To Change",
         string : "ltc",
-        date: "17 August 2012"
     },
 ];  
 return Works;

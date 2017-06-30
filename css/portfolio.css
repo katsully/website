@@ -1,8 +1,15 @@
-object, img {
-	height: 200px;
-	width: 200px;
+object {
+	height: 300px;
+	width: 300px;
 }
 
 h4, i {
 	color: white;
+}
+
+.portfolio-thumb {
+	display: inline-block;
+	float: left;
+	padding-left: 20px;
+	padding-top: 20px;
 }

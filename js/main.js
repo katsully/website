@@ -11,6 +11,10 @@ app.config(function($routeProvider, $locationProvider) {
             templateUrl: 'templates/portfolio.html',
             controller : "PortfolioController",
         })
+        .when('/portfolio/:workID', {
+            templateUrl: 'templates/project.html',
+            controller: "ProjectController"
+        })
         .when('/events', {
             templateUrl: 'templates/events.html',
         })
@@ -33,27 +37,35 @@ app.factory('Works', function(){
 
 var Works = {}
 
-Works.project =[
+Works.projects =[
     {
+        id: 1,
         name : "Aether",
         string : "aether03",
     },
     {
+        id: 2,
         name : "Torn",
         string : "torn",
     },
     {
+        id: 3,
         name : "Parsing Our Silent Language",
         string : "parsingLang",
     },
     {
+        id: 4,
         name : "Liable To Change",
         string : "ltc",
-    },
+    }
 ];  
 return Works;
 })
 
 app.controller("PortfolioController", function ($scope, Works) {
+    $scope.works = Works;
+});
+
+app.controller("ProjectController", function ($scope, Works) {
     $scope.works = Works;
 });

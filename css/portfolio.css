@@ -3,8 +3,10 @@ object {
 	width: 300px;
 }
 
-h4, i {
+a {
 	color: white;
+	display: block;
+	font-size: 24px;
 }
 
 .portfolio-thumb {

@@ -11,7 +11,7 @@ app.config(function($routeProvider, $locationProvider) {
             templateUrl: 'templates/portfolio.html',
             controller : "PortfolioController",
         })
-        .when('/portfolio/:workID', {
+        .when('/portfolio/:workName', {
             templateUrl: 'templates/project.html',
             controller: "ProjectController"
         })
@@ -39,22 +39,22 @@ var Works = {}
 
 Works.projects =[
     {
-        id: 1,
+        id: 0,
         name : "Aether",
         string : "aether03",
     },
     {
-        id: 2,
+        id: 1,
         name : "Torn",
         string : "torn",
     },
     {
-        id: 3,
+        id: 2,
         name : "Parsing Our Silent Language",
         string : "parsingLang",
     },
     {
-        id: 4,
+        id: 3,
         name : "Liable To Change",
         string : "ltc",
     }
@@ -66,6 +66,6 @@ app.controller("PortfolioController", function ($scope, Works) {
     $scope.works = Works;
 });
 
-app.controller("ProjectController", function ($scope, Works) {
-    $scope.works = Works;
+app.controller("ProjectController", function ($scope, Works, $routeParams) {
+    $scope.work = Works.projects[$routeParams.workName];
 });

@@ -1,0 +1,11 @@
+h2, p {
+	color: white;
+}
+
+h2, p, iframe {
+	padding-left: 50px;
+}
+
+p {
+	width: 640px;
+}
